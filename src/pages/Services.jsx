@@ -416,8 +416,8 @@ const PackagesSection = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className={`w-full py-3 rounded-full text-sm font-semibold transition-all ${pkg.popular
-                      ? 'bg-white text-black hover:bg-gray-100'
-                      : 'glass hover:bg-white/10'
+                    ? 'bg-white text-black hover:bg-gray-100'
+                    : 'glass hover:bg-white/10'
                     }`}
                 >
                   {pkg.cta}
@@ -564,6 +564,15 @@ const CTASection = () => {
                 Get in Touch
               </motion.button>
             </Link>
+            <a href="mailto:ONEPIECEBUISNESSOFFL@gmail.com">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-10 py-4 glass rounded-full text-lg font-semibold hover:bg-white/10 transition-all border border-white/20"
+              >
+                Email Directly
+              </motion.button>
+            </a>
           </div>
         </div>
       </motion.div>
